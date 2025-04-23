@@ -91,7 +91,7 @@
   <p class="sub-tagline">Think clearly. Work confidently.</p>
   <div class="coming-soon-banner">🚀 Coming Soon</div>
   <p class="description">
-      A quiet revolution in optical care tools. For those who know.
+    A quiet revolution in optical care tools. For those who know.
   </p>
 
   <form id="waitlist-form">
@@ -119,6 +119,11 @@
           msg.textContent = "Thanks! You're on the list.";
           msg.style.color = "green";
           input.value = "";
+
+          // ✅ Umami conversion tracker
+          if (typeof umami !== "undefined") {
+            umami('waitlist-signup');
+          }
         } else {
           throw new Error("Submission failed");
         }
