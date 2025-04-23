@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OptoGuide</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -19,24 +19,38 @@
       text-align: center;
       padding: 2rem;
     }
-    h2 {
-      font-size: 2rem;
+
+    .brand-title {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
       color: #000;
+    }
+
+    .tagline {
+      font-size: 1.6rem;
+      font-weight: 600;
       margin-bottom: 0.5rem;
     }
-    h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
+
+    .sub-tagline {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #333;
+      margin-bottom: 1.5rem;
     }
-    p {
+
+    .description {
       font-size: 1.1rem;
       max-width: 600px;
       margin: 0 auto 2rem;
     }
+
     form {
       margin-top: 1rem;
     }
+
     input[type="email"] {
       padding: 0.5rem;
       width: 250px;
@@ -44,6 +58,7 @@
       border: 1px solid #ccc;
       border-radius: 4px;
     }
+
     button {
       padding: 0.5rem 1rem;
       margin-left: 0.5rem;
@@ -53,16 +68,19 @@
       border-radius: 4px;
       cursor: pointer;
     }
+
     #waitlist-msg {
       margin-top: 1rem;
-      color: green;
     }
   </style>
 </head>
 <body>
-  <h2>OptoGuide</h2>
-  <h1>You know what to do. Let’s help you do it.</h1>
-  <p>Clinical triage, referral support, and dispensing tools. Designed for UK optometrists, dispensing opticians, and contact lens opticians.</p>
+  <h1 class="brand-title">OptoGuide</h1>
+  <h2 class="tagline">You know what to do. Let’s help you do it.</h2>
+  <p class="sub-tagline">Think clearly. Work confidently.</p>
+  <p class="description">
+    Clinical triage, referral support, and dispensing tools. Designed for UK optometrists, dispensing opticians, and contact lens opticians.
+  </p>
 
   <form id="waitlist-form">
     <input type="email" name="email" required placeholder="you@yourclinic.com" />
